@@ -18,7 +18,7 @@ body{
     top: 0; right: 0; bottom: 100px; left: 0;
     padding: .5em;
     border: .5em solid orange; 
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 10fr;
     grid-gap: .5em;
     background-color: #bcdaf3;
     min-height: 200px;
@@ -30,15 +30,13 @@ body{
     padding: 20px 0;
 }
 
-.item1 {
+.sidebar {
     grid-row-start: 1;
     grid-row-end: 2;
+    overflow-y: scroll
 }
 
 .item2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 5; 
+
 }
 
