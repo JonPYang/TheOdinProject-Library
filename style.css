@@ -3,47 +3,42 @@
 }
 
 body{
-    background-color: rgb(241, 209, 209);
-    overflow: hidden;
+    background-color: rgb(241, 209, 209)
 }
 
-
-
-.body{
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: 1fr 3fr;
-    background-color: rgba(255, 232, 232, 0.8);
-}
-
-.container{
+.outer-box{
+    position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 80vw;
+}
+
+.grid-container{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 10fr .5fr;
+    position: absolute;
+    top: 0; right: 0; bottom: 100px; left: 0;
+    padding: .5em;
     border: .5em solid orange; 
-    background-color: #FFFFFF;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: .5em;
+    background-color: #bcdaf3;
+    min-height: 200px;
 }
 
-
-.content{
-    overflow-y: scroll;
-    padding: 20px;
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
 }
 
-.sidebar{
-    overflow-y: scroll;
-    padding: 20px;
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
+.item2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 5; 
+}
 
-/*
-TODO:
-Experiment with scrolling within grid
-Add form to input author, title, number of pages, read/unread
-Add items into grid vis JS
-
-
-
-*/
