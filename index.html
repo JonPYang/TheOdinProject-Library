@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  <script src="scripts.js"></script>
 
   <div class="header">
     <h1>Library</h1>
@@ -63,7 +63,21 @@
         Test
         
       </div>
-      <div class="item2">2</div>
+      <div class="form">
+        <form>
+          <label for="booktitle">Book Title:</label><br>
+          <input type="text" id="booktitle" name="booktitle"><br>
+          <label for="bookauthor">Book Author:</label><br>
+          <input type="text" id="bookauthor" name="bookauthor"><br>
+          <label for="numpages">Number of Pages:</label><br>
+          <input type="text" id="numpages" name="numpages"><br>
+          <input type="radio" id="finished" name="read" value="finished">
+          <label for="read">Book Completed</label><br>
+          <input type="radio" id="unfinished" name="read" value="unfinished">
+          <label for="unfinished">Book Unfinished</label><br><br>
+          <input type="reset" onclick="addBook()" value="Add Book">
+        </form>
+      </div>
     </div>
   </div>
   <div class="other">

@@ -1,21 +1,19 @@
-// let myLibrary = [];
+var library = (function () {
 
-// function 
-
-// function Book(title, author, pages, read) {
-//     this.title = title
-//     this.author = author
-//     this.pages = pages
-//     this.read = read
-//     this.info = function() {
-//         return `${title}, ${author}, ${pages}, ${read}`
-//     }
-// }
-
-// function addBookToLibrary() {
-
-// }
-
-var book = {
+    class Book{
+        constructor(name, author, pageNum){
+            this.name = name;
+            this.author = author;
+            this.pageNum = pageNum;
+        }
+    }
     
+    let bookList = [];
+
+    return addBook
+})();
+
+function addBook(){
+    var title = document.getElementsByName("booktitle")[0];
+    console.log(title.value);
 }
