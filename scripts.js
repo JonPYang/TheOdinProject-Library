@@ -14,6 +14,12 @@ var library = (function () {
 })();
 
 function addBook(){
-    var title = document.getElementsByName("booktitle")[0];
-    console.log(title.value);
+    let title = document.getElementsByName("booktitle")[0];
+    let read = document.getElementsByName("read");
+
+    for(let i in read){
+        if (read[i].checked)
+        console.log(read[i].value);
+    }
+
 }
