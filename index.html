@@ -1,54 +1,65 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>The Odin Project Library</title>
-  <meta name="description" content="he Odin Project Library">
-  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
+  <title>TheOdinProject Library</title>
 </head>
 
 <body>
-  <script src="scripts.js"></script>
-
-  <div class="header">
-    <h1>Library</h1>
-  </div>
-  <div class="outer-box">
-    <div class="grid-container">
-      <div class="sidebar">
-        <div class= "bookcard">
-          Test Book
-        </div>
-        
-      </div>
-      <div class="detailviewer"></div>
-      <div class="form">
+  <div class="container mt-5">
+    <div class="row bg-dark">
+      <div class="col-3 bg-dark text-light mt-2 mb-3">
         <form>
-          <label for="booktitle">Book Title:</label><br>
-          <input type="text" id="booktitle" name="booktitle"><br>
-          <label for="bookauthor">Book Author:</label><br>
-          <input type="text" id="bookauthor" name="bookauthor"><br>
-          <label for="numpages">Number of Pages:</label><br>
-          <input type="text" id="numpages" name="numpages"><br>
-          <input type="radio" id="finished" name="read" value="finished">
-          <label for="read">Book Completed</label><br>
-          <input type="radio" id="unfinished" name="read" value="unfinished">
-          <label for="unfinished">Book Unfinished</label><br><br>
-          <input type="reset" onclick="bookInfo()" value="Add Book">
-        </form>
+          <div class="form-group">
+              <label>Book Title</label>
+              <input type="text" class="form-control" placeholder="Book Title">
+          </div>
+          <div class="form-group">
+              <label>Author Name</label>
+              <input type="text" class="form-control" placeholder="Author Name">
+          </div>
+          <div class="form-group">
+              <label>Number of Pages</label>
+              <input type="number" class="form-control" placeholder="Number of Pages">
+          </div>
+          <div class="form-group">
+              <label>Progress?</label>
+              <select class="form-control">
+                  <option value="unread">Unread</option>
+                  <option value="started">Started</option>
+                  <option Value="finished">Finished</option>
+              </select>
+          </div>
+          <input type="submit" class="btn btn-secondary btn-success" value="Submit">
+      </form>
+      </div>
+      <div class="col-9">
+        <div class="card text-white bg-primary mt-4">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary Card Title</h5>
+            <p class="card-text">Quick sample text to put into a card.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="other">
-    Some other stuff
-  </div>
-  <div class="other2">
-    Other 2
-  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
 
 </body>
 
