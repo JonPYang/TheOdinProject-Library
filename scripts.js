@@ -1,25 +1,18 @@
-(function () {
+// (function () {
 
-    var library = {
+//     var library = {
 
-        //TODO =================== rewatch https://www.youtube.com/watch?v=pOfwp6VlnlM&list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f&index=3
-        // revealing module pattern
+//         //TODO =================== rewatch https://www.youtube.com/watch?v=pOfwp6VlnlM&list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f&index=3
+//         // revealing module pattern
 
-        let bookList = [];
+//         
 
-        init: function () {
-            this.cacheDom();
-        },
-        cacheDom: function() {
-            this.$title = document.getElementsByName("booktitle")[0].value;
-            this.author = document.getElementsByName("bookauthor")[0].value;
-            this.numPages = document.getElementsByName("numpages")[0].value;
-            this.read = document.getElementsByName("read");
-        }
-    }
-})()
-
-
+//         init: function () {
+//             this.cacheDom();
+//         },
+//         cacheDom: 
+//     }
+// })()
 
 
 class Book {
@@ -32,8 +25,13 @@ class Book {
 }
 
 function bookInfo() {
-
+    let title = document.getElementsByName("booktitle")[0].value;
+    let author = document.getElementsByName("author")[0].value;
+    let numPages = document.getElementsByName("numpages")[0].value;
+    let read = document.getElementsByName("read");
     let readValue;
+
+    let bookList = [];
 
     for (let i in read) {
         if (read[i].checked)
@@ -50,5 +48,8 @@ function bookInfo() {
     let newBook = new Book(title, author, numPages, readValue);
     bookList.push(newBook);
     console.log(`Current Library: ${bookList}`)
+}
 
+function addBook(bookInfo){
+    
 }
