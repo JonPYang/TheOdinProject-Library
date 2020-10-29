@@ -7,17 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
 
+  <link href="css/bootstrap.css" rel="stylesheet">
 
   <title>TheOdinProject Library</title>
+
 </head>
 
 <body>
   <script src="scripts.js"></script>
-  <div class="container mt-5">
-    <div class="row bg-dark">
-      <div class="col-3 bg-dark text-light mt-2 mb-3">
+
+  <div class="container"><h2 class="text-primary mb-2">Library:</h5></div class="container">
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-3 mt-2 mb-3">
         <form>
           <div class="form-group">
             <label>Book Title</label>
@@ -34,99 +37,15 @@
           <div class="form-group">
             <label>Progress?</label>
             <select class="form-control" name=read>
-              <option value="unread">Unread</option>
-              <option value="started">Started</option>
-              <option Value="finished">Finished</option>
+              <option value="Unread">Unread</option>
+              <option value="Started">Started</option>
+              <option Value="Finished">Finished</option>
             </select>
           </div>
-          <input type="button" class="btn btn-secondary btn-success" value="Submit" onclick="bookInfo()">
+          <input type="reset" class="btn btn-secondary btn-success" value="Submit" onclick="addBook()">
         </form>
       </div>
-      <div class="col-9">
-        <div class="card mt-4">
-          <div class="card-header pb-0">
-            <h5>The Lord of The Rings</h5>
-            <h6>J.R.R Tolkien</h6>
-          </div>
-          <div class="card-body py-0">
-            <div class="row">
-              <div class="col-3" style="min-width: 70px"><small class="text-muted">1000 Pages</small></div>
-              <div class="col px-0"><small class="text-danger">Unread</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="card mt-4">
-          <div class="card-header pb-0">
-            <h5>The Lord of The Rings</h5>
-            <h6>J.R.R Tolkien</h6>
-          </div>
-          <div class="card-body py-0">
-            <div class="row">
-              <div class="col-3" style="min-width: 70px"><small class="text-muted">1000 Pages</small></div>
-              <div class="col px-0"><small class="text-danger">Unread</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="card mt-4">
-          <div class="card-header pb-0">
-            <h5>The Lord of The Rings</h5>
-            <h6>J.R.R Tolkien</h6>
-          </div>
-          <div class="card-body py-0">
-            <div class="row">
-              <div class="col-3" style="min-width: 70px"><small class="text-muted">1000 Pages</small></div>
-              <div class="col px-0"><small class="text-danger">Unread</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="card mt-4">
-          <div class="card-header pb-0">
-            <h5>The Lord of The Rings</h5>
-            <h6>J.R.R Tolkien</h6>
-          </div>
-          <div class="card-body py-0">
-            <div class="row">
-              <div class="col-3" style="min-width: 70px"><small class="text-muted">1000 Pages</small></div>
-              <div class="col px-0"><small class="text-danger">Unread</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="card mt-4">
-          <div class="card-header pb-0">
-            <h5>The Lord of The Rings</h5>
-            <h6>J.R.R Tolkien</h6>
-          </div>
-          <div class="card-body py-0">
-            <div class="row">
-              <div class="col-3" style="min-width: 70px"><small class="text-muted">1000 Pages</small></div>
-              <div class="col px-0"><small class="text-danger">Unread</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="card mt-4">
-          <div class="card-header pb-0">
-            <h5>The Lord of The Rings</h5>
-            <h6>J.R.R Tolkien</h6>
-          </div>
-          <div class="card-body py-0">
-            <div class="row">
-              <div class="col-3" style="min-width: 70px"><small class="text-muted">1000 Pages</small></div>
-              <div class="col px-0"><small class="text-danger">Unread</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="card mt-4">
-          <div class="card-header pb-0">
-            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sint beatae obcaecati architecto, sapiente vel molestias culpa qui necessitatibus iste expedita repellendus quidem amet perferendis possimus suscipit laborum repudiandae magnam.</h5>
-            <h6>J.R.R Tolkien</h6>
-          </div>
-          <div class="card-body py-0">
-            <div class="row">
-              <div class="col-3" style="min-width: 70px"><small class="text-muted">1000 Pages</small></div>
-              <div class="col px-0"><small class="text-danger">Unread</small></div>
-            </div>
-          </div>
-        </div>
+      <div class="col-9" name="librarycontainer">
         <div class="card mt-4">
           <div class="card-header pb-0">
             <h5>The Lord of The Rings</h5>
